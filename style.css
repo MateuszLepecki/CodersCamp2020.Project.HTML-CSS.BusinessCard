@@ -1,0 +1,122 @@
+:root{
+    --heightOfSection: 93vh;
+}
+
+
+*, html{
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer{
+    margin:0;
+    display:flex;
+    flex-direction: column;
+}
+
+.section{
+    border: solid 3px #555555;
+     height: 100vh;
+}
+.hero{
+    border: solid 3px black;
+    height: var(--heightOfSection);
+    box-sizing: border-box;
+    margin:0px;
+    display:flex;
+    flex-wrap:wrap;
+    position:relative;
+    /* flex-direction: column; */
+}
+    
+.socialsContainer{
+    display:flex;
+    max-width: 20%;
+    justify-content: start;
+    border: solid 3px red;
+    box-sizing: border-box;
+    height:10vh;
+    
+}
+
+.social{
+    border: solid 3px rgb(49, 175, 49);
+    box-sizing: border-box;
+}
+
+.hello{
+    border: solid 3px rgb(49, 175, 49);
+    height:15vh;
+    box-sizing: border-box;
+    width:100%
+}
+
+.buttonContainers{
+    border: solid 3px rgb(49, 175, 49);
+    box-sizing: border-box;
+    display:flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    right:0;
+    height:7vh;
+}
+.buttonContainers *{
+    text-decoration: none;
+}
+.linker{
+    padding:7px;
+    margin: 0px 10px;
+    border: solid 3px rgb(76, 49, 175);
+    
+}
+
+.aboutMe{
+    display: flex;
+}
+
+.aboutMe *{
+    border: solid 3px rgb(175, 49, 154);
+    width:50%;
+    margin: 2vh;
+}
+
+.skills{
+    display:flex;
+    flex-direction: column;
+}
+h1{
+    margin: 3vh;
+    text-align: center;
+    font-size: 40px;
+    flex:1;
+}
+.skillsContainer{
+    display:flex;
+    justify-content: stretch;
+    align-content: stretch;
+    border: solid 3px rgb(29, 194, 180);
+    flex:11;
+}
+
+.skillsContainer * {
+    border: solid 3px rgb(139, 158, 33);
+    margin: 2vh;
+    width: 50%;
+    align-self: stretch;
+    justify-self: stretch;
+}
+.portfolio{
+    display:flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: space-between;
+}
+
+ .portfolio * {
+     border: solid 3px rgb(233, 33, 33);
+     margin: 2vh;
+     align-self: stretch;
+     justify-self: stretch;
+     height: 40%;
+ }
