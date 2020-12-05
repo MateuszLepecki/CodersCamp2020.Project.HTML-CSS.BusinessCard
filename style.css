@@ -75,10 +75,19 @@
     display: flex;
 }
 
-.aboutMe *{
+.text, .graphic, .formContainer{
     border: solid 3px rgb(175, 49, 154);
-    width:50%;
-    margin: 2vh;
+    width:46%;
+    margin: 2%;
+    display: flex;
+   align-items: center;
+}
+
+.text > p{
+    color:red;
+    font-size: 1.2em;
+    margin: 5vw 5vw;
+    text-align: justify;
 }
 
 .skills{
@@ -120,3 +129,47 @@ h1{
      justify-self: stretch;
      height: 40%;
  }
+
+form > p{
+    margin:5px 0px;
+}
+
+.contact.section {
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display:flex;
+    align-items: stretch;
+}
+
+.formContainer{
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width:100%;
+    margin: 0 5%;
+    position: relative;
+}
+input[type=text]{
+    width:30%;
+    min-width: 70px;
+    margin-left: 5%;
+}
+
+textarea{
+    box-sizing: border-box;
+    width:90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+input[type=submit]{
+    /* margin-left: 5%; */
+    padding:3px 6px;
+    position:absolute;
+    left: calc(50% - 24px);
+}
+

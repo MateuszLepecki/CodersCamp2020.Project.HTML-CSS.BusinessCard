@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="mainContainer">
+    <div class="mainContainer" id="beginning">
         <div class="hero">
             <div class="socialsContainer">
                 <div class="social">GH</div>
@@ -39,8 +39,16 @@
             
         </div>
         <div id="linkAboutMe" class=" aboutMe section">
-            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque similique esse fugit, laudantium nihil corrupti voluptate voluptas minus enim non temporibus. Tempore illo ut cum praesentium provident rem, repudiandae ad veritatis minima quibusdam iusto adipisci sequi. Deleniti odit sit ipsa quam. At dicta quidem, non temporibus similique nisi velit perspiciatis.</div>
-            <div class="graphic"></div>
+            <div class="text">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque similique esse fugit,
+                    laudantium nihil corrupti voluptate voluptas minus enim non temporibus. Tempore illo
+                    ut cum praesentium provident rem, repudiandae ad veritatis minima quibusdam iusto adipisci
+                    sequi. Deleniti odit sit ipsa quam. At dicta quidem, non temporibus similique nisi velit
+                    perspiciatis.
+                </p>
+            </div>
+            <div class="graphic">IMG</div>
         </div>
         <div id="linkSkills" class="skills section">
             <h1>Umiejętności</h1>
@@ -54,7 +62,18 @@
             <div class="project"></div>
             <div class="project"></div>
         </div>
-        <div id="linkContact" class="contact section"></div>
+        <div id="linkContact" class="contact section">
+                <div class="formContainer">
+                    <form action="#beginning" method="GET">
+                        <p><input type="text" size="30" maxlength="20" placeholder="Imię"></p>
+                        <p><input type="text" size="30" maxlength="20" placeholder="E-mail"></p>
+                        <p><textarea name="message" id="messageId" cols="100" rows="8"
+                                placeholder="Wpisz wiadomość"></textarea></p>
+                        <p><input type="submit" value="Prześlij"></p>
+                    </form>
+                </div>
+                <div class="graphic">IMG</div>          
+        </div>
     </div>
 
 </body>
