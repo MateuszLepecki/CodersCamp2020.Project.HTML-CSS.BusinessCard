@@ -17,51 +17,56 @@
 .section{
     border: solid 3px #555555;
      height: 100vh;
+     min-height:500px;
 }
 .hero{
     border: solid 3px black;
     height: var(--heightOfSection);
     box-sizing: border-box;
     margin:0px;
-    display:flex;
-    flex-wrap:wrap;
     position:relative;
-    /* flex-direction: column; */
 }
     
 .socialsContainer{
     display:flex;
-    max-width: 20%;
-    justify-content: start;
-    border: solid 3px red;
+    max-width: 200px;
+    justify-content: space-around;
     box-sizing: border-box;
-    height:10vh;
-    
+
 }
 
 .social{
-    border: solid 3px rgb(49, 175, 49);
+    border: solid 2px #000;
     box-sizing: border-box;
+    margin-top: 5px;
+}
+
+a{
+    color:black;
 }
 
 .hello{
     border: solid 3px rgb(49, 175, 49);
     height:15vh;
     box-sizing: border-box;
+    position: absolute;
+    top: 45%;
     width:100%
 }
 
-.buttonContainers{
+.navBar{
     border: solid 3px rgb(49, 175, 49);
     box-sizing: border-box;
     display:flex;
+    align-self: end;
     justify-content: flex-end;
     position: sticky;
     top: 0;
     right:0;
     height:7vh;
+    background-color: #FFF;
 }
-.buttonContainers *{
+.navBar *{
     text-decoration: none;
 }
 .linker{
@@ -108,12 +113,54 @@ h1{
     flex:11;
 }
 
-.skillsContainer * {
+.skillsHalf{
     border: solid 3px rgb(139, 158, 33);
-    margin: 2vh;
+    margin: 5px;
     width: 50%;
-    align-self: stretch;
-    justify-self: stretch;
+    display: flex;
+    flex-direction: column;
+}
+.skillsHalf p{
+    text-align: center;
+    margin-top: 15px;
+    flex: 1;
+}
+.wrapper {
+    flex:10;
+    height:80%;
+    display:grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 15px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2,minmax(auto, 220px));
+    grid-auto-rows: 1fr;
+}
+
+.imgWrapper p{
+
+    margin: 0px 1px 2px 2px;
+}
+img.skill{
+    margin-left: auto;
+    margin-right: auto;
+    max-height:70px;
+    width:auto;
+    display: block;
+}
+@media(max-width:500px) {
+   img.skill {
+       margin-left: auto;
+       margin-right: auto;
+       max-height: 40px;
+       width: auto;
+       display: block;
+   }
+   .imgWrapper p {
+    font-size: 0.8rem;
+   }
 }
 .portfolio{
     display:flex;
