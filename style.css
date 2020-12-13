@@ -12,13 +12,15 @@ html {
 	margin: 0;
 	display: flex;
 	flex-direction: column;
+	background-color: #383838;
 }
 
 .mainContainer * {
 	box-sizing: border-box;
+	color: #fff;
 }
 
-.section {
+section {
 	border: solid 3px #555555;
 	height: 100vh;
 	min-height: 500px;
@@ -28,6 +30,7 @@ html {
 	height: var(--heightOfSection);
 	margin: 0px;
 	position: relative;
+	background: url(./src/hero_bacground.jpg) no-repeat center center/ cover;
 }
 
 .socialsContainer {
@@ -37,7 +40,7 @@ html {
 }
 
 .social {
-	border: solid 2px #000;
+	border: solid 2px #fff;
 
 	margin-top: 5px;
 }
@@ -47,14 +50,42 @@ a {
 }
 
 .hello {
-	border: solid 3px rgb(49, 175, 49);
-	height: 15vh;
-
+	min-height: 150px;
 	position: absolute;
-	top: 45%;
+	top: 50%;
+	bottom: 50%;
+	width: 40vw;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: flex;
+	align-items: center;
+}
+.image {
+	/* position: absolute; */
+	width: auto;
+	height: 30vh;
+	margin: auto;
+}
+.image > svg {
 	width: 100%;
 }
-
+.myNameIs {
+	border: solid 3px rgb(49, 175, 49);
+	min-height: 14vh;
+	width: 30vw;
+	margin: auto;
+	font-size: 3vw;
+	background-color: rgba(94, 94, 94, 0.4);
+	text-align: center;
+}
+.myNameIs p {
+	display: inline-block;
+	vertical-align: middle;
+    line-height: 8vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
 .navbar {
 	border: solid 3px rgb(49, 175, 49);
 	display: flex;
@@ -65,7 +96,6 @@ a {
 	top: 0;
 	right: 0;
 	height: 40px;
-	background-color: #fff;
 	max-width: 450px;
 }
 .navbar * {
@@ -79,7 +109,8 @@ a {
 	padding: 7px;
 	margin: 0px 10px;
 	text-align: center;
-	border: solid 3px rgb(76, 49, 175);
+	border: solid 3px rgba(46, 182, 80, 0.583);
+	background-color: rgb(46, 182, 80);
 }
 
 .aboutMe {
@@ -208,9 +239,8 @@ form > p {
 	margin: 5px 0px;
 }
 
-.contact.section {
+section.contact {
 	padding-top: 20px;
-	padding-bottom: 20px;
 }
 .contactContainer {
 	display: flex;
@@ -219,7 +249,7 @@ form > p {
 }
 
 .formContainer {
-    display: flex;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	border: solid 3px rgb(175, 49, 154);
@@ -238,6 +268,7 @@ input[type="text"] {
 	min-width: 70px;
 	margin-left: 5%;
 	padding: 2px 5px;
+	color: #000;
 }
 
 textarea {
@@ -245,6 +276,7 @@ textarea {
 	margin-left: 5%;
 	margin-right: 5%;
 	padding: 2px 5px;
+	color: #000;
 }
 
 input[type="submit"] {
@@ -252,6 +284,7 @@ input[type="submit"] {
 	padding: 3px 6px;
 	position: absolute;
 	left: calc(50% - 24px);
+	color: #000;
 }
 
 .contactGraphic {
@@ -265,11 +298,11 @@ input[type="submit"] {
 footer {
 	display: flex;
 	justify-content: center;
-    height: 10%;
+	height: 10%;
 }
 footer > a {
-    margin: auto 10px;
-    display:block;
+	margin: auto 10px;
+	display: block;
 }
 
 @media (max-width: 405px) {
@@ -282,10 +315,10 @@ footer > a {
 	.linker {
 		width: 80%;
 		margin: 3px 10px;
-    }
-    .formContainer {
-        margin-top:10vh;
-    }
+	}
+	.formContainer {
+		margin-top: 10vh;
+	}
 }
 @media (max-width: 500px) {
 	img.skill {
@@ -297,19 +330,19 @@ footer > a {
 }
 
 @media (max-width: 647px) {
-    .imgProjectWrapper {
+	.imgProjectWrapper {
 		height: 60%;
 	}
-    .contactContainer {
-        flex-direction: column;
-        justify-content: stretch;
-        align-items: stretch;
-        min-height: 300px;
-    }
-    .formContainer {
-        flex: 1;
-    }
-    .contactGraphic {
-        flex: 1;
-    }
+	.contactContainer {
+		flex-direction: column;
+		justify-content: stretch;
+		align-items: stretch;
+		min-height: 300px;
+	}
+	.formContainer {
+		flex: 1;
+	}
+	.contactGraphic {
+		flex: 1;
+	}
 }
