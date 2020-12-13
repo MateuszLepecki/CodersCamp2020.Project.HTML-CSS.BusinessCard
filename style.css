@@ -21,7 +21,7 @@ html {
 .section {
 	border: solid 3px #555555;
 	height: 100vh;
-	min-height: 400px;
+	min-height: 500px;
 }
 .hero {
 	border: solid 3px black;
@@ -197,25 +197,32 @@ img.skill {
 	margin: 2vh;
 	align-self: stretch;
 	justify-self: stretch;
-	height: 45%;
+	height: 50%;
 	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
 }
 .projectDetails {
-	flex: 1;
+	flex: 2;
 	max-width: 100vw;
+	text-align: justify;
+	margin: 0 1%;
+	flex-basis: 225px;
 }
 
 .imgProjectWrapper {
 	display: flex;
+	flex: 3;
 	justify-content: space-between;
 	justify-items: center;
-	max-width: 50%;
+	align-items: center;
+	flex-basis: 338px;
 }
 .imgProjectWrapper > img {
 	display: block;
-	width: auto;
-	height: 100%;
-	max-width: 50%;
+	height: auto;
+	width: 50%;
+	max-height: 100%;
 }
 
 form > p {
