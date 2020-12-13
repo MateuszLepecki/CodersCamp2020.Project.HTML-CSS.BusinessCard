@@ -1,166 +1,265 @@
 <!DOCTYPE html>
 <html lang="pl">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<title>CodersCamp | Projekt 1 - HTML i CSS</title>
+		<meta
+			name="description"
+			content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!"
+		/>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<link rel="stylesheet" href="./css/fontello.css" type="text/css" />
+	</head>
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>CodersCamp | Projekt 1 - HTML i CSS</title>
-    <meta name="description"
-        content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="stylesheet" href="./css/fontello.css" type="text/css" />
-</head>
+	<body>
+		<div class="mainContainer" id="beginning">
+			<div class="hero">
+				<div class="socialsContainer">
+					<a
+						href="https://github.com/MateuszLepecki"
+						title="GitHub"
+						target="_blank"
+					>
+						<div class="social">
+							<i class="icon-github-circled"></i>
+						</div>
+					</a>
+					<a href="https://facebook.com" title="facebook" target="_blank">
+						<div class="social">
+							<i class="icon-facebook-rect"></i>
+						</div>
+					</a>
+					<a
+						href="https://www.linkedin.com/in/mateusz-%C5%82epecki-25230772/"
+						title="LinkedIn"
+						target="_blank"
+					>
+						<div class="social">
+							<i class="icon-linkedin-rect"></i>
+						</div>
+					</a>
+				</div>
+				<div class="hello">
+					<div class="imagine">IMG</div>
+					<div class="myNameIS">Hello, jestem Mateusz</div>
+				</div>
+			</div>
+			<div class="navbar">
+				<a href="#linkAboutMe">
+					<div class="linker">about me</div>
+				</a>
+				<a href="#linkSkills">
+					<div class="linker">skills</div>
+				</a>
+				<a href="#linkPortfolio">
+					<div class="linker">portfolio</div>
+				</a>
+				<a href="#linkContact">
+					<div class="linker">contact</div>
+				</a>
+			</div>
+			<div id="linkAboutMe" class="aboutMe section">
+				<div class="text">
+					<p>
+						Jestem absontem Politechniki Wrocławskiej, kierunku Mechanika i
+						Budowa Maszyn. Obecnie pracuję jako inzynier części zamiennych i
+						tworzę katalogi maszyn budowlanych. Moimi głownymi zainteresowaniami
+						są nowinki technologiczne, gry planszowe oraz rozwiązywanie
+						problemów zarówno w postaci łamigłówek jak i błędów kodowych.
+						Obecnie biorę udział w kursie programownia webowego CodersCamp,
+						który pomaga mi się rozwijać na ścieżce web development.
+					</p>
+				</div>
+				<div class="graphic">
+					<img src="./src/brain.jpg" alt="Brain" />
+				</div>
+			</div>
+			<div id="linkSkills" class="skills section">
+				<h1>Umiejętności</h1>
+				<div class="skillsContainer">
+					<div class="skillsHalf">
+						<p>Obecne</p>
+						<div class="wrapper left">
+							<div class="imgWrapper">
+								<img
+									class="skill"
+									src="./src/skillsIcons/html5.png"
+									alt="html5"
+								/>
+								<p>HTML5</p>
+							</div>
+							<div class="imgWrapper">
+								<img
+									class="skill"
+									src="./src/skillsIcons/css3.png"
+									alt="css3"
+								/>
+								<p>CSS3</p>
+							</div>
+							<div class="imgWrapper">
+								<img
+									class="skill"
+									src="./src/skillsIcons/javascript.png"
+									alt="javaScript"
+								/>
+								<p>JavaScript</p>
+							</div>
+							<div class="imgWrapper">
+								<img class="skill" src="./src/skillsIcons/sql.png" alt="sql" />
+								<p>SLQ</p>
+							</div>
+							<div class="imgWrapper">
+								<img
+									class="skill"
+									src="./src/skillsIcons/adobe-illustrator.png"
+									alt="Adobe Illustrator"
+								/>
+								<p>
+									Adobe <br />
+									Illustrator
+								</p>
+							</div>
+							<div class="imgWrapper">
+								<img class="skill" src="./src/skillsIcons/git.png" alt="git" />
+								<p>Git</p>
+							</div>
+						</div>
+					</div>
 
-<body>
-    <div class="mainContainer" id="beginning">
-        <div class="hero">
-            <div class="socialsContainer">
-                <a href="https://github.com/MateuszLepecki" title="GitHub" target="_blank" >
-                    <div class="social">
-                        <i class="icon-github-circled"></i>
-                    </div>
-                </a>
-                <a href="https://facebook.com" title="facebook" target="_blank">
-                    <div class="social">
-                        <i class="icon-facebook-rect"></i>
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/in/mateusz-%C5%82epecki-25230772/" title="LinkedIn" target="_blank">
-                    <div class="social">
-                        <i class="icon-linkedin-rect"></i>
-                    </div>
-                </a>
-            </div>
-            <div class="hello">
-                <div class="imagine">IMG</div>
-                <div class="myNameIS">Hello, jestem Mateusz</div>
-            </div>
-        </div>
-        <div class="navbar">
-            <a href="#linkAboutMe">
-                <div class="linker">about me</div>
-            </a>
-            <a href="#linkSkills">
-                <div class="linker">skills</div>
-            </a>
-            <a href="#linkPortfolio">
-                <div class="linker">portfolio</div>
-            </a>
-            <a href="#linkContact">
-                <div class="linker">contact</div>
-            </a>
-
-        </div>
-        <div id="linkAboutMe" class=" aboutMe section">
-            <div class="text">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque similique esse fugit,
-                    laudantium nihil corrupti voluptate voluptas minus enim non temporibus. Tempore illo
-                    ut cum praesentium provident rem, repudiandae ad veritatis minima quibusdam iusto adipisci
-                    sequi. Deleniti odit sit ipsa quam. At dicta quidem, non temporibus similique nisi velit
-                    perspiciatis.
-                </p>
-            </div>
-            <div class="graphic">IMG</div>
-        </div>
-        <div id="linkSkills" class="skills section">
-            <h1>Umiejętności</h1>
-            <div class="skillsContainer">
-                <div class="skillsHalf">
-                   <p>Obecne</p>
-                    <div class="wrapper left">
-                        <div class="imgWrapper ">
-                            <img class="skill" src="./src/skillsIcons/html5.png" alt="html5">
-                            <p>HTML5</p>
-                       </div>
-                       <div class="imgWrapper">
-                            <img class="skill" src="./src/skillsIcons/css3.png" alt="css3">
-                            <p>CSS3</p>
-                       </div>
-                        <div class="imgWrapper">
-                            <img class="skill" src="./src/skillsIcons/javascript.png" alt="javaScript">
-                            <p>JavaScript</p>
-                       </div>
-                       <div class="imgWrapper">
-                            <img class="skill" src="./src/skillsIcons/sql.png" alt="sql">
-                            <p>SLQ</p>
-                       </div>
-                       <div class="imgWrapper">
-                            <img class="skill" src="./src/skillsIcons/adobe-illustrator.png" alt="Adobe Illustrator">
-                            <p>Adobe </br> Illustrator</p>
-                       </div>
-                       <div class="imgWrapper">
-                            <img class="skill" src="./src/skillsIcons/git.png" alt="git">
-                            <p>Git</p>
-                       </div>
-                    </div>
-                </div>
-            
-                <div class="skillsHalf ">
-                   <p>Wkrótce</p>
-                    <div class="wrapper right">
-                        <div class="imgWrapper">
-                            <img class="skill" src="./src/skillsIcons/typescript.png" alt="html5">
-                            <p>TypeScript</p>
-                        </div>
-                        <div class="imgWrapper">
-                            <img class="skill" src="./src/skillsIcons/react.png" alt="css3">
-                            <p>React</p>
-                        </div>
-                        <div class="imgWrapper">
-                            <img class="skill" src="./src/skillsIcons/nodejs.png" alt="sql">
-                            <p>Node.js</p>
-                        </div>
-                        <div class="imgWrapper">
-                            <img class="skill" src="./src/skillsIcons/redux.png" alt="javaScript">
-                            <p>Redux</p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div id="linkPortfolio" class="portfolio section">
-            <!-- <h1>Portfolio</h1> -->
-            <div class="project">Projekt 1</div>
-            <div class="project"> Projekt 2</div>
-        </div>
-        <div id="linkContact" class="contact section" style=" padding-bottom: 0px;">
-            <div class="contactContainer" style="height: 85vh;">
-                <div class="formContainer">
-                    <form action="#beginning" method="GET">
-                        <p><input type="text" size="30" maxlength="20" placeholder="Imię"></p>
-                        <p><input type="text" size="30" maxlength="20" placeholder="E-mail"></p>
-                        <p><textarea name="message" id="messageId" cols="100" rows="7"
-                                placeholder="Wpisz wiadomość"></textarea></p>
-                        <p><input type="submit" value="Prześlij"></p>
-                    </form>
-                </div>
-                <div class="graphic">IMG</div>
-            </div>
-            <footer>
-                <a href="https://github.com/MateuszLepecki" title="GitHub" target="_blank">
-                    <div class="social">
-                        <i class="icon-github-circled"></i>
-                    </div>
-                </a>
-                <a href="https://facebook.com" title="facebook" target="_blank">
-                    <div class="social">
-                        <i class="icon-facebook-rect"></i>
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/in/mateusz-%C5%82epecki-25230772/" title="LinkedIn"
-                    target="_blank">
-                    <div class="social">
-                        <i class="icon-linkedin-rect"></i>
-                    </div>
-                </a>
-            </footer>
-        </div>
-    </div>
-
-</body>
-
+					<div class="skillsHalf">
+						<p>Wkrótce</p>
+						<div class="wrapper right">
+							<div class="imgWrapper">
+								<img
+									class="skill"
+									src="./src/skillsIcons/typescript.png"
+									alt="html5"
+								/>
+								<p>TypeScript</p>
+							</div>
+							<div class="imgWrapper">
+								<img
+									class="skill"
+									src="./src/skillsIcons/react.png"
+									alt="css3"
+								/>
+								<p>React</p>
+							</div>
+							<div class="imgWrapper">
+								<img
+									class="skill"
+									src="./src/skillsIcons/nodejs.png"
+									alt="sql"
+								/>
+								<p>Node.js</p>
+							</div>
+							<div class="imgWrapper">
+								<img
+									class="skill"
+									src="./src/skillsIcons/redux.png"
+									alt="javaScript"
+								/>
+								<p>Redux</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="linkPortfolio" class="portfolio section">
+				<!-- <h1>Portfolio</h1> -->
+				<div class="project">
+					<div class="projectDetails">
+						Stworzenie systemu i oprogramowania, które poprzez wyświetlacz
+						będzie wspomagała operatora podczas pozycjonowania narzędzia
+						koparki. Wykorzystato w tym celu czujniki pochylenia (ikliniometry),
+						wyświetlacz programowalny oraz magistrala komunikacyjna CAN. Dzięki
+						systemowi operator jest w stanie określić zadaną głębokość kopania a
+						system poinformuje go gdy tę głębokość przekroczy.
+					</div>
+					<div class="imgProjectWrapper">
+						<img src="./src/projekt1_1.jpg" alt="img_project1_1" />
+						<img src="./src/projekt1_2.jpg" alt="img_project1_2" />
+					</div>
+				</div>
+				<div class="project">
+					<div class="projectDetails">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga non
+						hic quasi amet, officiis iusto quia molestiae necessitatibus tempora
+						officia, repellendus unde pariatur quae maxime id. Debitis tempore
+						impedit ex beatae facere ab, veniam modi quos ipsam officia
+						repudiandae distinctio a numquam iusto saepe hic delectus illo eaque
+						consectetur aperiam.
+					</div>
+					<div class="imgProjectWrapper"></div>
+				</div>
+			</div>
+			<div id="linkContact" class="contact section" style="padding-bottom: 0px">
+				<div class="contactContainer" style="height: 85vh">
+					<div class="formContainer">
+						<form action="#beginning" method="GET">
+							<p>
+								<input
+									type="text"
+									size="30"
+									maxlength="20"
+									placeholder="Imię"
+								/>
+							</p>
+							<p>
+								<input
+									type="text"
+									size="30"
+									maxlength="20"
+									placeholder="E-mail"
+								/>
+							</p>
+							<p>
+								<textarea
+									name="message"
+									id="messageId"
+									cols="100"
+									rows="7"
+									placeholder="Wpisz wiadomość"
+								></textarea>
+							</p>
+							<p>
+								<input type="submit" value="Prześlij" />
+							</p>
+						</form>
+					</div>
+					<div class="graphic">IMG</div>
+				</div>
+				<footer>
+					<a
+						href="https://github.com/MateuszLepecki"
+						title="GitHub"
+						target="_blank"
+					>
+						<div class="social">
+							<i class="icon-github-circled"></i>
+						</div>
+					</a>
+					<a href="https://facebook.com" title="facebook" target="_blank">
+						<div class="social">
+							<i class="icon-facebook-rect"></i>
+						</div>
+					</a>
+					<a
+						href="https://www.linkedin.com/in/mateusz-%C5%82epecki-25230772/"
+						title="LinkedIn"
+						target="_blank"
+					>
+						<div class="social">
+							<i class="icon-linkedin-rect"></i>
+						</div>
+					</a>
+				</footer>
+			</div>
+		</div>
+	</body>
 </html>
