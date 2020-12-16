@@ -21,14 +21,12 @@ html {
 }
 
 section {
-	border: solid 3px #555555;
 	height: 100vh;
 	min-height: 500px;
 }
 .hero {
 	border: solid 3px black;
 	height: var(--heightOfSection);
-	margin: 0px;
 	position: relative;
 	background: url(./src/hero_bacground.jpg) no-repeat center center/ cover;
 }
@@ -41,9 +39,13 @@ section {
 
 .social {
 	border: solid 2px #fff;
-
 	margin-top: 5px;
 }
+
+
+.social:hover{
+	border-color: rgb(170, 170, 170);
+} 
 
 a {
 	color: black;
@@ -54,37 +56,89 @@ a {
 	position: absolute;
 	top: 50%;
 	bottom: 50%;
-	width: 40vw;
+	max-width: 50vw;
 	left: 0;
 	right: 0;
 	margin: auto;
 	display: flex;
 	align-items: center;
 }
-.image {
-	/* position: absolute; */
-	width: auto;
-	height: 30vh;
-	margin: auto;
-}
-.image > svg {
+.imageHello {
+	position: relative;
 	width: 100%;
+	flex: 1;
+	flex-basis: 100px;
+	animation-name: shyLogo;
+	animation-duration: 5.5s;
+	animation-timing-function: ease-out;
+
+}
+
+@keyframes shyLogo {
+	0% {
+		opacity: 35%;
+		left: 100vw;
+		top: 100%;
+	}
+	10% {
+		opacity: 35%;
+		left: 100vw;
+		top: 100%;
+	}
+	40% {
+		opacity: 35%;
+		left: -50vw;
+		top: 100%;
+	}
+	55% {
+		opacity: 90%;
+		left: -38vw;
+		top: 100%;
+	}
+	60% {
+		opacity: 90%;
+		left: -38vw;
+		top: 100%;
+	}
+	75% {
+		opacity: 35%;
+		left: -50vw;
+		top: 100%;
+	}
+	93% {
+		opacity: 35%;
+		left: 0;
+		top: 0;
+	}
+	100% {
+		opacity: 100%;
+		left: 0;
+		top: 0;
+	}
+}
+
+.imageHello > svg {
+	width: 100%;
+	height: auto;
+	margin: auto;
 }
 .myNameIs {
 	border: solid 3px rgb(49, 175, 49);
 	min-height: 14vh;
-	width: 30vw;
+	width: 45vw;
 	margin: auto;
-	font-size: 3vw;
+	font-size: 2rem;
 	background-color: rgba(94, 94, 94, 0.4);
 	text-align: center;
+	flex: 1;
+	flex-basis: 156px;
 }
 .myNameIs p {
 	display: inline-block;
 	vertical-align: middle;
-    line-height: 8vh;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+	line-height: 8vh;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
 }
 .navbar {
 	border: solid 3px rgb(49, 175, 49);
@@ -105,7 +159,7 @@ a {
 	width: 25%;
 }
 .linker {
-	width: 80px;
+	width: 100px;
 	padding: 7px;
 	margin: 0px 10px;
 	text-align: center;
@@ -118,7 +172,7 @@ a {
 }
 
 .text {
-	border: solid 3px rgb(175, 49, 154);
+	/* border: solid 3px rgb(175, 49, 154); */
 	flex: 1;
 	margin: 2%;
 	display: flex;
@@ -126,10 +180,21 @@ a {
 }
 
 .text > p {
-	color: red;
 	font-size: 1.2em;
-	margin: 5vw 5vw;
+	margin: 5vh 2vw;
 	text-align: justify;
+}
+.aboutMeGraphic {
+	flex: 1;
+}
+
+.aboutMeGraphic img {
+	max-width: 96%;
+	height: 95%;
+	margin: auto;
+	object-fit: contain;
+	padding: 2%;
+	/* vertical-align: middle; */
 }
 
 .skills {
@@ -147,12 +212,12 @@ h1 {
 	max-height: 83%;
 	justify-content: stretch;
 	align-content: stretch;
-	border: solid 3px rgb(29, 194, 180);
+	/* border: solid 3px rgb(29, 194, 180); */
 	flex: 11;
 }
 
 .skillsHalf {
-	border: solid 3px rgb(139, 158, 33);
+	/* border: solid 3px rgb(139, 158, 33); */
 	margin: 5px;
 	width: 50%;
 	display: flex;
@@ -200,7 +265,7 @@ img.skill {
 }
 
 .project {
-	border: solid 3px rgb(233, 33, 33);
+	/* border: solid 3px rgb(233, 33, 33); */
 	margin-top: 2vh;
 	align-self: stretch;
 	justify-self: stretch;
@@ -252,7 +317,7 @@ section.contact {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: solid 3px rgb(175, 49, 154);
+	/* border: solid 3px rgb(175, 49, 154); */
 	margin: 0% 2%;
 	flex: 1;
 }
@@ -288,7 +353,7 @@ input[type="submit"] {
 }
 
 .contactGraphic {
-	border: solid 3px rgb(175, 49, 154);
+	/* border: solid 3px rgb(175, 49, 154); */
 	flex: 1;
 	display: flex;
 	align-items: center;
@@ -304,8 +369,13 @@ footer > a {
 	margin: auto 10px;
 	display: block;
 }
-
-@media (max-width: 405px) {
+.odd{
+	background-color: #545E75;
+}
+.even{
+	background-color: #303542;
+}
+@media (max-width: 450px) {
 	.navbar {
 		align-self: center;
 	}

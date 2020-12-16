@@ -59,3 +59,7 @@
 .icon-github-circled:before { content: '\e800'; } /* '' */
 .icon-facebook-rect:before { content: '\f301'; } /* '' */
 .icon-linkedin-rect:before { content: '\f31b'; } /* '' */
+
+.icon-github-circled:hover {color: rgb(170, 170, 170);} 
+.icon-facebook-rect:hover { color: rgb(170, 170, 170); }
+.icon-linkedin-rect:hover { color: rgb(170, 170, 170); } 
