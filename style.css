@@ -1,5 +1,5 @@
 :root {
-	--heightOfSection: 93vh;
+	--heightOfSection: 100vh;
 }
 
 *,
@@ -20,13 +20,14 @@ html {
 	color: #fff;
 }
 
-section {
-	height: 100vh;
+.sectionWithoutContact {
+	height: var(--heightOfSection);
 	min-height: 500px;
+	padding-top:40px;
 }
 .hero {
 	border: solid 3px black;
-	height: var(--heightOfSection);
+	height: 93vh;
 	position: relative;
 	background: url(./src/hero_bacground.jpg) no-repeat center center/ cover;
 }
@@ -141,7 +142,7 @@ a {
 	padding-bottom: 3vh;
 }
 .navbar {
-	border: solid 3px rgb(49, 175, 49);
+	/* border: solid 3px rgb(64, 100, 64); */
 	display: flex;
 	flex-wrap: wrap;
 	align-self: end;
@@ -149,7 +150,7 @@ a {
 	position: sticky;
 	top: 0;
 	right: 0;
-	height: 40px;
+	min-height: 40px;
 	max-width: 450px;
 }
 .navbar * {
@@ -280,7 +281,7 @@ img.skill {
 	max-width: 100vw;
 	text-align: justify;
 	margin: 0 1%;
-	flex-basis: 225px;
+	flex-basis: 267px;
 }
 
 .imgProjectWrapper {
@@ -306,6 +307,8 @@ form > p {
 
 section.contact {
 	padding-top: 20px;
+	height:100vh;
+
 }
 .contactContainer {
 	display: flex;
@@ -376,18 +379,23 @@ footer > a {
 	background-color: #303542;
 }
 @media (max-width: 450px) {
+
 	.navbar {
 		align-self: center;
 	}
 	.navbar > a {
-		width: 50%;
+		/* width: 50%; */
 	}
 	.linker {
-		width: 80%;
-		margin: 3px 10px;
+		width: 85px;
+		margin: 3px 3px;
+		font-size: 0.75rem;
 	}
 	.formContainer {
 		margin-top: 10vh;
+	}
+	.text p{
+		font-size: 0.7rem;
 	}
 }
 @media (max-width: 500px) {
