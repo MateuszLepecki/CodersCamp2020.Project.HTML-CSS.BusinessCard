@@ -6,13 +6,14 @@
 html {
 	margin: 0;
 	padding: 0;
+	font-family: "Open Sans", sans-serif;
 }
 
 .mainContainer {
 	margin: 0;
 	display: flex;
 	flex-direction: column;
-	background-color: #383838;
+	background-color: #303542;
 }
 
 .mainContainer * {
@@ -23,7 +24,7 @@ html {
 .sectionWithoutContact {
 	height: var(--heightOfSection);
 	min-height: 500px;
-	padding-top:40px;
+	padding-top: 40px;
 }
 .hero {
 	border: solid 3px black;
@@ -34,19 +35,18 @@ html {
 
 .socialsContainer {
 	display: flex;
-	max-width: 200px;
+	max-width: 180px;
 	justify-content: space-around;
 }
 
 .social {
-	border: solid 2px #fff;
+	/* border: solid 2px #fff; */
 	margin-top: 5px;
 }
 
-
-.social:hover{
+.social:hover {
 	border-color: rgb(170, 170, 170);
-} 
+}
 
 a {
 	color: black;
@@ -72,7 +72,6 @@ a {
 	animation-name: shyLogo;
 	animation-duration: 5.5s;
 	animation-timing-function: ease-out;
-
 }
 
 @keyframes shyLogo {
@@ -124,22 +123,25 @@ a {
 	margin: auto;
 }
 .myNameIs {
-	border: solid 3px rgb(49, 175, 49);
+	/* border: solid 3px #00b84d;
+	border-radius: 10px;
+	background-color: rgba(0, 184, 77, 50%); */
 	min-height: 14vh;
-	width: 45vw;
+	/* width: 45vw; */
 	margin: auto;
-	font-size: 2rem;
-	background-color: rgba(94, 94, 94, 0.4);
+	font-size: 4rem;
 	text-align: center;
 	flex: 1;
 	flex-basis: 156px;
 }
 .myNameIs p {
+	font-family: "Ubuntu", sans-serif;
 	display: inline-block;
 	vertical-align: middle;
-	line-height: 8vh;
+	-webkit-text-stroke: 0.08rem rgba(0, 184, 77, 10%);
+	/* line-height: 8vh;
 	padding-top: 3vh;
-	padding-bottom: 3vh;
+	padding-bottom: 3vh; */
 }
 .navbar {
 	/* border: solid 3px rgb(64, 100, 64); */
@@ -147,6 +149,7 @@ a {
 	flex-wrap: wrap;
 	align-self: end;
 	justify-content: space-between;
+	align-items: center;
 	position: sticky;
 	top: 0;
 	right: 0;
@@ -158,18 +161,22 @@ a {
 }
 .navbar > a {
 	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .linker {
 	width: 100px;
 	padding: 7px;
 	margin: 0px 10px;
 	text-align: center;
-	border: solid 3px rgba(46, 182, 80, 0.583);
-	background-color: rgb(46, 182, 80);
+	font-size: 1rem;
+	background: linear-gradient(150deg, #00b84d, rgba(0, 99, 53, 1) 100%);
+	border-radius: 4px;
 }
 
 .aboutMe {
 	display: flex;
+	/* font-size: 1.2em; */
 }
 
 .text {
@@ -180,8 +187,8 @@ a {
 	align-items: center;
 }
 
+
 .text > p {
-	font-size: 1.2em;
 	margin: 5vh 2vw;
 	text-align: justify;
 }
@@ -307,8 +314,7 @@ form > p {
 
 section.contact {
 	padding-top: 20px;
-	height:100vh;
-
+	height: 100vh;
 }
 .contactContainer {
 	display: flex;
@@ -372,30 +378,36 @@ footer > a {
 	margin: auto 10px;
 	display: block;
 }
-.odd{
-	background-color: #545E75;
+.odd {
+	background-color: #545e75;
 }
-.even{
+.even {
 	background-color: #303542;
 }
 @media (max-width: 450px) {
-
+	html {
+		font-size: 0.75rem;
+	}
 	.navbar {
 		align-self: center;
-	}
-	.navbar > a {
-		/* width: 50%; */
+		width: 100%;
+		display: flex;
+		justify-content: stretch;
 	}
 	.linker {
 		width: 85px;
-		margin: 3px 3px;
-		font-size: 0.75rem;
+		margin: 3px auto;
 	}
 	.formContainer {
 		margin-top: 10vh;
 	}
-	.text p{
+	.text p {
 		font-size: 0.7rem;
+	}
+}
+@media (max-width:570px){
+	.text p{
+		font-size:0.7rem;
 	}
 }
 @media (max-width: 500px) {
@@ -406,6 +418,7 @@ footer > a {
 		font-size: 0.8rem;
 	}
 }
+
 
 @media (max-width: 647px) {
 	.imgProjectWrapper {
