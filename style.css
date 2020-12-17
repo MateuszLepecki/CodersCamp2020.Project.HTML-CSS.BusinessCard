@@ -305,9 +305,9 @@ img.skill {
 .imgProjectWrapper > img {
 	display: block;
 	height: auto;
-	width: 48%;
+	max-width: 48%;
 	max-height: 95%;
-	margin-right: 2%;
+	margin: 0 auto;
 	object-fit: contain;
 	border: 2px solid #303542;
 }
@@ -319,6 +319,7 @@ form > p {
 section.contact {
 	padding-top: 15px;
 	height: 100vh;
+	min-height: 500px;
 }
 .contactContainer {
 	display: flex;
@@ -370,6 +371,14 @@ input[type="submit"] {
 	margin: 0% 2%;
 }
 
+.contactGraphic img {
+	max-width: 96%;
+	height: 85%;
+	margin: auto;
+	object-fit: contain;
+	padding: 2%;
+}
+
 footer {
 	display: flex;
 	justify-content: center;
@@ -385,15 +394,21 @@ footer > a {
 .even {
 	background-color: #303542;
 }
-@media (max-width: 800px) {
+@media (max-width: 700px) {
 	.project {
 		flex-direction: column;
+		justify-content: stretch;
 	}
 	.projectDetails {
-		font-size: 1rem;
+		font-size: 0.7rem;
+		flex:0;
 	}
-	.imgProjectWrapper {
-		height: 60%;
+	.imgProjectWrapper{
+		flex:3;
+		max-height: 75%;
+	}
+	.imgProjectWrapper > img {
+	width: auto;
 	}
 }
 @media (max-width: 647px) {
@@ -405,17 +420,17 @@ footer > a {
 		flex-direction: column;
 		justify-content: stretch;
 		align-items: stretch;
-		min-height: 300px;
+		/* min-height: 300px; */
 	}
+	
+	.contactGraphic {
+	max-height: 50%;
+}
 	.formContainer {
 		flex: 1;
 	}
 	.contactGraphic {
 		flex: 1;
-	}
-	.projectDetails {
-		font-size: 0.7rem;
-	}
 	}
 }
 
