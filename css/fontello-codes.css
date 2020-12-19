@@ -1,4 +1,5 @@
 
 .icon-github-circled:before { content: '\e800'; } /* '' */
-.icon-facebook-rect:before { content: '\f301'; } /* '' */
-.icon-linkedin-rect:before { content: '\f31b'; } /* '' */
+.icon-home-1:before { content: '\e801'; } /* '' */
+.icon-facebook-squared:before { content: '\f308'; } /* '' */
+.icon-linkedin-squared:before { content: '\f30c'; } /* '' */

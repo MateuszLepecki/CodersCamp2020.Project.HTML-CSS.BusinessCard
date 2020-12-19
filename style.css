@@ -145,6 +145,13 @@ a {
 	padding-top: 3vh;
 	padding-bottom: 3vh; */
 }
+.homeButton {
+	position: fixed;
+	bottom: 0;
+}
+.homeButton i {
+	color: #00b84d;
+}
 .navbar {
 	/* border: solid 3px rgb(64, 100, 64); */
 	display: flex;

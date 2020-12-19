@@ -10,12 +10,21 @@ Font license info
    Homepage:  http://zocial.smcllns.com/
 
 
-## Brandico
+## Entypo
 
-   (C) 2012 by Vitaly Puzrin
+   Copyright (C) 2012 by Daniel Bruce
 
-   Author:    Crowdsourced, for Fontello project
+   Author:    Daniel Bruce
    License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  
+   Homepage:  http://www.entypo.com
+
+
+## Font Awesome
+
+   Copyright (C) 2016 by Dave Gandy
+
+   Author:    Dave Gandy
+   License:   SIL ()
+   Homepage:  http://fortawesome.github.com/Font-Awesome/
 
 
