@@ -1,26 +1,22 @@
 :root {
 	--heightOfSection: 100vh;
 }
-
 *,
 html {
 	margin: 0;
 	padding: 0;
 	font-family: "Open Sans", sans-serif;
 }
-
 .mainContainer {
 	margin: 0;
 	display: flex;
 	flex-direction: column;
 	background-color: #000;
 }
-
 .mainContainer * {
 	box-sizing: border-box;
 	color: #fff;
 }
-
 .sectionWithoutContact {
 	height: var(--heightOfSection);
 	min-height: 500px;
@@ -31,26 +27,17 @@ html {
 	position: relative;
 	background: url(./src/hero_bacground.jpg) no-repeat center center/ cover;
 }
-
 .socialsContainer {
 	display: flex;
 	max-width: 180px;
 	justify-content: space-around;
 }
-
 .social {
-	/* border: solid 2px #fff; */
 	margin-top: 5px;
 }
-
 .social:hover {
 	border-color: rgb(170, 170, 170);
 }
-
-a {
-	color: black;
-}
-
 .hello {
 	height: 50%;
 	position: absolute;
@@ -71,7 +58,6 @@ a {
 	animation-duration: 5.5s;
 	animation-timing-function: ease-out;
 }
-
 @keyframes shyLogo {
 	0% {
 		opacity: 35%;
@@ -114,17 +100,12 @@ a {
 		top: 0;
 	}
 }
-
 .imageHello > svg {
 	width: 80%;
 	height: auto;
 	margin: auto;
 }
 .myNameIs {
-	/* border: solid 3px #00b84d;
-	border-radius: 10px;
-	background-color: rgba(0, 184, 77, 50%); */
-	/* width: 45vw; */
 	min-height: 14vh;
 	margin: auto;
 	font-size: 5rem;
@@ -139,11 +120,6 @@ a {
 .myNameIs p {
 	font-family: "Ubuntu", sans-serif;
 	display: inline-block;
-	/* vertical-align: middle; */
-	/* -webkit-text-stroke: 0.08rem rgba(0, 184, 77, 10%); */
-	/* line-height: 8vh;
-	padding-top: 3vh;
-	padding-bottom: 3vh; */
 }
 .homeButton {
 	position: fixed;
@@ -153,9 +129,7 @@ a {
 	color: #00b84d;
 }
 .navbar {
-	/* border: solid 3px rgb(64, 100, 64); */
 	display: flex;
-	/* flex-wrap: wrap; */
 	align-self: flex-end;
 	justify-content: space-between;
 	align-items: center;
@@ -165,10 +139,8 @@ a {
 	min-height: 40px;
 	max-width: 450px;
 }
-.navbar * {
+.navbar a {
 	text-decoration: none;
-}
-.navbar > a {
 	width: 25%;
 	margin-left: 5px;
 	margin-right: 5px;
@@ -176,18 +148,15 @@ a {
 .linker {
 	width: 100px;
 	padding: 7px;
-	/* margin: 0px 10px; */
 	text-align: center;
 	font-size: 1rem;
 	background: linear-gradient(150deg, #00b84d, rgba(0, 99, 53, 1) 100%);
 	border-radius: 4px;
 	position: relative;
 }
-
 .linker:hover:after {
 	position: relative;
 	display: block;
-	/* bottom:px; */
 	background-color: #fff;
 	opacity: 40%;
 	width: 80%;
@@ -196,20 +165,16 @@ a {
 	height: 3px;
 	border-radius: 1px 1px;
 }
-
 .aboutMe {
 	display: flex;
 	font-size: 1.2rem;
 }
-
 .text {
-	/* border: solid 3px rgb(175, 49, 154); */
 	flex: 1;
 	margin: 2%;
 	display: flex;
 	align-items: center;
 }
-
 .text > p {
 	margin: 5vh 2vw;
 	text-align: justify;
@@ -219,16 +184,13 @@ a {
 	display: flex;
 	align-items: center;
 }
-
 .aboutMeGraphic img {
 	max-height: 100%;
 	width: 95%;
 	margin: auto;
 	object-fit: contain;
 	padding: 2%;
-	/* vertical-align: middle; */
 }
-
 .skills {
 	display: flex;
 	flex-direction: column;
@@ -244,12 +206,9 @@ h1 {
 	max-height: calc(91% - 3rem);
 	justify-content: stretch;
 	align-content: stretch;
-	/* border: solid 3px rgb(29, 194, 180); */
 	flex: 11;
 }
-
 .skillsHalf {
-	/* border: solid 3px rgb(139, 158, 33); */
 	margin: 5px;
 	width: 50%;
 	display: flex;
@@ -263,7 +222,6 @@ h2 {
 	height: 10%;
 }
 .wrapper {
-	/* flex:9; */
 	height: 80%;
 	display: grid;
 	justify-content: center;
@@ -289,38 +247,31 @@ img.skill {
 	max-width: 100%;
 	height: 65%;
 }
-
 .portfolio {
 	display: flex;
 	flex-direction: column;
 	align-content: stretch;
 	justify-content: space-between;
 }
-
 .project {
 	align-self: stretch;
 	justify-self: stretch;
 	height: 50%;
 	display: flex;
 	align-items: center;
-	/* flex-wrap: wrap; */
 }
-
 .projectDetails {
 	flex: 2;
 	font-size: 1rem;
 	max-width: 100vw;
 	text-align: justify;
 	margin: 0 1%;
-	/* flex-basis: 267px; */
 }
-
 .imgProjectWrapper {
 	display: flex;
 	flex: 4;
 	justify-content: space-between;
 	align-items: center;
-	/* flex-basis: 380px; */
 	height: 85%;
 }
 .imgProjectWrapper > img {
@@ -332,11 +283,9 @@ img.skill {
 	object-fit: contain;
 	border: 3px solid #303542;
 }
-
 form > p {
 	margin: 5px 0px;
 }
-
 section.contact {
 	padding-top: 40px;
 	height: 100vh;
@@ -347,7 +296,6 @@ section.contact {
 	align-items: stretch;
 	min-height: 300px;
 }
-
 .formContainer {
 	display: flex;
 	align-items: center;
@@ -355,13 +303,11 @@ section.contact {
 	margin: 0% 2%;
 	flex: 1;
 }
-
 form {
 	width: 100%;
 	margin: 0 5%;
 	position: relative;
 }
-
 input[type="text"] {
 	width: 30%;
 	min-width: 70px;
@@ -369,7 +315,6 @@ input[type="text"] {
 	padding: 2px 5px;
 	color: #000;
 }
-
 textarea {
 	width: 90%;
 	margin-left: 5%;
@@ -377,7 +322,6 @@ textarea {
 	padding: 2px 5px;
 	color: #000;
 }
-
 input[type="submit"] {
 	padding: 3px 6px;
 	position: absolute;
@@ -387,14 +331,12 @@ input[type="submit"] {
 	margin-right: auto;
 	color: #000;
 }
-
 .contactGraphic {
 	flex: 1;
 	display: flex;
 	align-items: center;
 	margin: 0% 2%;
 }
-
 .contactGraphic img {
 	max-width: 96%;
 	height: 85%;
@@ -402,7 +344,6 @@ input[type="submit"] {
 	object-fit: contain;
 	padding: 2%;
 }
-
 footer {
 	display: flex;
 	justify-content: center;
@@ -413,12 +354,11 @@ footer > a {
 	display: block;
 }
 .odd {
-	background-color: #545e75;
+	background-color: rgb(100, 100, 100);
 }
 .even {
 	background-color: #303542;
 }
-
 @media (max-width: 900px) {
 	html {
 		font-size: 14px;
@@ -434,7 +374,6 @@ footer > a {
 		min-height: 0;
 	}
 	.projectDetails {
-		/* font-size: 0.7rem; */
 		flex: 0;
 	}
 	.imgProjectWrapper {
@@ -454,9 +393,7 @@ footer > a {
 		flex-direction: column;
 		justify-content: stretch;
 		align-items: stretch;
-		/* min-height: 300px; */
 	}
-
 	.aboutMeGraphic {
 		height: 50%;
 		flex: 1;
@@ -469,7 +406,6 @@ footer > a {
 		flex-direction: column;
 		justify-content: stretch;
 		align-items: stretch;
-		/* min-height: 300px; */
 	}
 	.formContainer {
 		flex: 1;
@@ -479,30 +415,28 @@ footer > a {
 		flex: 1;
 	}
 }
-
 @media (max-width: 600px) {
 	html {
 		font-size: 12px;
 	}
-	.myNameIs {
-		font-size: 3rem;
+	.hello{
+		max-width: 65vw;
 	}
-	.text p {
-		/* font-size: 0.7rem; */
+	.myNameIs {
+		font-size: 3.5rem;
 	}
 }
 @media (max-width: 500px) {
 	img.skill {
 		max-height: 60px;
 	}
-	.imgWrapper p {
-		/* font-size: 0.8rem; */
-	}
 }
-
 @media (max-width: 450px) {
+	.hello{
+		max-width: 70vw;
+	}
 	.myNameIs {
-		font-size: 2rem;
+		font-size: 3rem;
 	}
 	.navbar {
 		align-self: center;
