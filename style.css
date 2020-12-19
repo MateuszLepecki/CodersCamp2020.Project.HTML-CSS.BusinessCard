@@ -309,7 +309,7 @@ form {
 	position: relative;
 }
 input[type="text"] {
-	width: 30%;
+	width: 90%;
 	min-width: 70px;
 	margin-left: 5%;
 	padding: 2px 5px;
@@ -419,7 +419,7 @@ footer > a {
 	html {
 		font-size: 12px;
 	}
-	.hello{
+	.hello {
 		max-width: 65vw;
 	}
 	.myNameIs {
@@ -432,7 +432,7 @@ footer > a {
 	}
 }
 @media (max-width: 450px) {
-	.hello{
+	.hello {
 		max-width: 70vw;
 	}
 	.myNameIs {
