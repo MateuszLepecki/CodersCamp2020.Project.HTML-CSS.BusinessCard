@@ -209,11 +209,13 @@ a {
 }
 .aboutMeGraphic {
 	flex: 1;
+	display: flex;
+	align-items: center;
 }
 
 .aboutMeGraphic img {
-	max-width: 96%;
-	height: 95%;
+	max-height: 100%;
+	width: 95%;
 	margin: auto;
 	object-fit: contain;
 	padding: 2%;
@@ -227,12 +229,12 @@ a {
 h1 {
 	margin: 3vh;
 	text-align: center;
-	font-size: 40px;
+	font-size: 3rem;
 	flex: 1;
 }
 .skillsContainer {
 	display: flex;
-	max-height: 83%;
+	max-height: calc(91% - 3rem);
 	justify-content: stretch;
 	align-content: stretch;
 	/* border: solid 3px rgb(29, 194, 180); */
@@ -245,6 +247,7 @@ h1 {
 	width: 50%;
 	display: flex;
 	flex-direction: column;
+	max-height: 93%;
 }
 .skillsHalf p,
 h2 {
@@ -288,7 +291,6 @@ img.skill {
 }
 
 .project {
-	margin-top: 2vh;
 	align-self: stretch;
 	justify-self: stretch;
 	height: 50%;
@@ -372,7 +374,10 @@ textarea {
 input[type="submit"] {
 	padding: 3px 6px;
 	position: absolute;
-	left: calc(50% - 24px);
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
 	color: #000;
 }
 
@@ -408,52 +413,75 @@ footer > a {
 }
 
 @media (max-width: 900px) {
+	html {
+		font-size: 14px;
+	}
 	.myNameIs {
-		font-size: 3rem;
+		font-size: 3.5rem;
 	}
 }
 @media (max-width: 700px) {
 	.project {
 		flex-direction: column;
 		justify-content: stretch;
+		min-height: 0;
 	}
 	.projectDetails {
-		font-size: 0.7rem;
+		/* font-size: 0.7rem; */
 		flex: 0;
 	}
 	.imgProjectWrapper {
 		flex: 3;
 		max-height: 75%;
+		min-height: 0;
 	}
 	.imgProjectWrapper > img {
 		width: auto;
 	}
 }
 @media (max-width: 647px) {
-	.contactContainer {
+	html {
+		font-size: 13px;
+	}
+	.aboutMe {
 		flex-direction: column;
 		justify-content: stretch;
 		align-items: stretch;
 		/* min-height: 300px; */
 	}
 
-	.contactGraphic {
-		max-height: 50%;
+	.aboutMeGraphic {
+		height: 50%;
+		flex: 1;
+		min-height: 0;
+	}
+	.aboutMe text {
+		flex: 1;
+	}
+	.contactContainer {
+		flex-direction: column;
+		justify-content: stretch;
+		align-items: stretch;
+		/* min-height: 300px; */
 	}
 	.formContainer {
 		flex: 1;
 	}
 	.contactGraphic {
+		max-height: 50%;
 		flex: 1;
 	}
 }
 
 @media (max-width: 600px) {
+	html {
+		font-size: 12px;
+	}
 	.myNameIs {
-		font-size: 2rem;
+		font-size: 3rem;
 	}
 	.text p {
-		font-size: 0.7rem;
+		/* font-size: 0.7rem; */
 	}
 }
 @media (max-width: 500px) {
@@ -461,13 +489,13 @@ footer > a {
 		max-height: 60px;
 	}
 	.imgWrapper p {
-		font-size: 0.8rem;
+		/* font-size: 0.8rem; */
 	}
 }
 
 @media (max-width: 450px) {
-	html {
-		font-size: 0.8rem;
+	.myNameIs {
+		font-size: 2rem;
 	}
 	.navbar {
 		align-self: center;
@@ -484,8 +512,5 @@ footer > a {
 	}
 	.formContainer {
 		margin-top: 10vh;
-	}
-	.text p {
-		font-size: 0.7rem;
 	}
 }
