@@ -13,7 +13,7 @@ html {
 	margin: 0;
 	display: flex;
 	flex-direction: column;
-	background-color: #303542;
+	background-color: #000;
 }
 
 .mainContainer * {
@@ -27,7 +27,6 @@ html {
 	padding-top: 40px;
 }
 .hero {
-	border: solid 3px black;
 	height: calc(100vh - 40px);
 	position: relative;
 	background: url(./src/hero_bacground.jpg) no-repeat center center/ cover;
@@ -53,7 +52,7 @@ a {
 }
 
 .hello {
-	min-height: 150px;
+	height: 50%;
 	position: absolute;
 	top: 50%;
 	bottom: 50%;
@@ -117,7 +116,7 @@ a {
 }
 
 .imageHello > svg {
-	width: 100%;
+	width: 80%;
 	height: auto;
 	margin: auto;
 }
@@ -128,8 +127,9 @@ a {
 	/* width: 45vw; */
 	min-height: 14vh;
 	margin: auto;
-	font-size: 4rem;
+	font-size: 5rem;
 	text-align: center;
+	font-weight: 500;
 	flex: 1;
 	flex-basis: 156px;
 	display: flex;
@@ -256,7 +256,6 @@ h2 {
 	/* flex:9; */
 	height: 80%;
 	display: grid;
-
 	justify-content: center;
 	align-content: center;
 	justify-items: center;
@@ -407,6 +406,12 @@ footer > a {
 .even {
 	background-color: #303542;
 }
+
+@media (max-width: 900px) {
+	.myNameIs {
+		font-size: 3rem;
+	}
+}
 @media (max-width: 700px) {
 	.project {
 		flex-direction: column;
@@ -422,9 +427,6 @@ footer > a {
 	}
 	.imgProjectWrapper > img {
 		width: auto;
-	}
-	.myNameIs {
-		font-size: 3rem;
 	}
 }
 @media (max-width: 647px) {
